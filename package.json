@@ -1,0 +1,35 @@
+{
+  "name": "MODULE_NAME",
+  "description": "Module.",
+  "version": "0.0.1",
+  "author": "James Skinner <spiralx@gmail.com> (https://github.com/spiralx)",
+  "license": "MIT",
+  "homepage": "https://github.com/spiralx/json-schema-test#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiralx/json-schema-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spiralx/json-schema-test/issues"
+  },
+  "keywords": [
+    "json",
+    "schema"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "typings install",
+    "build": "webpack --progress --color",
+    "start": "cross-env NODE_ENV=development webpack --watch",
+    "test": "cross-env NODE_ENV=test karma start"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.3",
+    "ts-loader": "^1.2.0",
+    "typescript": "^2.0.10",
+    "typings": "^2.0.0",
+    "webpack": "^1.13.3"
+  }
+}

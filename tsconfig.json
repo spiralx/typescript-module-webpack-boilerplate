@@ -2,18 +2,17 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "lib": [ "dom", "es6" ],
+    "noEmit": true,
     "sourceMap": true,
     "noImplicitAny": true,
-    "removeComments": true,
     "preserveConstEnums": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "outFile": "./dist/out.js"
+    "types": [ "node" ]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
+  "files": [
+    "src/index.ts",
+    "src/index.d.ts"
   ]
 }

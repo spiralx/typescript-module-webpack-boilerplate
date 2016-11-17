@@ -1,0 +1,7 @@
+--reporter spec
+--require ./helper.js
+--compilers ts:ts-node/register
+--harmony
+--check-leaks
+--bail
+--full-trace
